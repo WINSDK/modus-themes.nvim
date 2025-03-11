@@ -232,7 +232,9 @@ function M.setup()
 
 		["@attribute"] = { link = "PreProc" }, -- Attribute annotations (e.g. Python decorators).
 		["@attribute.builtin"] = { link = "PreProc" }, -- Built-in annotations (e.g. `property` in Python).
-		["@property"] = { link = "@field" }, -- The key in key-value pairs.
+		["@property"] = { link = "Identifier" }, -- The key in key-value pairs.
+    ["@field"] = { link = "Identifier"},
+    ["@field.name"] = { link = "Identifier" },
 
 		-- Functions
 		["@function"] = { link = "Function" }, -- Function definitions.
